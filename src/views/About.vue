@@ -73,9 +73,9 @@ map.addLayer(
 'source-layer': 'building',
 'filter': ['==', 'extrude', 'true'],
 'type': 'fill-extrusion',
-'minzoom': 15,
+'minzoom': 9,
 'paint': {
-'fill-extrusion-color': '#aaa',
+'fill-extrusion-color': '#eb3434',
  
 // use an 'interpolate' expression to add a smooth transition effect to the
 // buildings as the user zooms in
@@ -92,12 +92,12 @@ map.addLayer(
 'interpolate',
 ['linear'],
 ['zoom'],
-15,
+9,
 0,
-15.05,
+9.05,
 ['get', 'min_height']
 ],
-'fill-extrusion-opacity': 0.6
+'fill-extrusion-opacity': 0.8
 }
 },
 labelLayerId
